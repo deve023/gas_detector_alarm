@@ -11,16 +11,13 @@ end;
 
 architecture beh of gas_detector_alarm is
 
-signal y: std_logic_vector(1 downto 0);
-signal st: std_logic_vector(1 downto 0):="00";
+signal y: std_logic_vector(1 downto 0):="00";
 
 begin
-  st(1) <= (not gas_detector and (not st(0) or st(1))) or (not button and (st(0) or st(1)));
-  st(0) <= (gas_detector and not st(0) and st(1)) or (st(0) and (not button or not st(1)));
+  y(1) <= (not gas_detector and (not y(0) or y(1))) or (not button and (y(0) or y(1)));
+  y(0) <= (gas_detector and not y(0) and y(1)) or (y(0) and (not button or not y(1)));
 
   led <= gas_detector;
-  buzzer <= st(0);
-  
-y <= st;
+  buzzer <= y(0);
 
 end beh;
