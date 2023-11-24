@@ -1,6 +1,6 @@
 # Gas Detector Alarm
 
-The system has a gas detector. When gas is detected a yellow LED turns on and an alarm buzzer rings. When gas is no longer present, the LED turns off but the sound alarm remains until the user presses the deactivation button. Cost: aproximately USD 16 if one purchases the components through Amazon.
+The system has a gas detector. When gas is detected a yellow LED turns on and an alarm buzzer rings. When gas is no longer present, the LED turns off but the sound alarm remains until the user presses the deactivation button. Cost: aproximately USD 16 if the components are purchased through Amazon.
 
 # Block Diagram
 
