@@ -16,7 +16,7 @@ signal st: std_logic_vector(1 downto 0):="00";
 
 begin
   st(1) <= (not gas_detector and (not st(0) or st(1))) or (not button and (st(0) or st(1)));
-  st(0) <= (gas_detector and not st(0) and st(1)) or (st(0) and (not button or st(1)));
+  st(0) <= (gas_detector and not st(0) and st(1)) or (st(0) and (not button or not st(1)));
 
   led <= gas_detector;
   buzzer <= st(0);
