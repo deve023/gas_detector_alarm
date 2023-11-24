@@ -14,6 +14,6 @@ The repository contains the VHD code describing the hardware, a test bench to tr
 
 # Case Example
 
-In this scenario, pressing the button when gas is not detected does not change the output. Once gas is detected, LED and buzzer both turn on. If gas is no longer detected, LED goes off but buzzer remains. Only when pressing the button does the buzzer turn off. Furthermore, if gas is detected when the button is on, LED turns on but the buzzer does not ring.
+In this scenario, pressing the button when the alarm is off does not change the output. Once gas is detected, LED and buzzer both turn on. If gas is no longer detected, LED goes off but buzzer remains. Only when pressing the button does the buzzer turn off. Furthermore, if gas is detected when the button is on, LED turns on but the buzzer does not ring.
 
 ![Example](https://github.com/deve023/gas_detector_alarm/assets/51866497/51a59597-69b9-4e90-b86e-a65388b247db)
