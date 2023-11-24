@@ -19,6 +19,6 @@ end component;
 begin
   DUT: gas_detector_alarm port map (button, gas_detector, led, buzzer);
   
-  button <= '0','1' after 5 ns, '0' after 10 ns, '1' after 25 ns, '0' after 40 ns;
+  button <= '0','1' after 5 ns, '0' after 10 ns, '1' after 25 ns, '0' after 40 ns, '1' after 45 ns, '0' after 60 ns;
   gas_detector <= '0', '1' after 15 ns, '0' after 20 ns, '1' after 30 ns, '0' after 35 ns;
 end Test;
